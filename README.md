@@ -1,7 +1,7 @@
-# CLEVRTEX
+# ClevrTex
 
-This repository contains dataset generation code for CLEVRTEX benchmark from paper:
-**[CLEVRTEX: A Texture-Rich Benchmark for Unsupervised Multi-Object Learning](https://www.robots.ox.ac.uk/~vgg/research/clevrtex)**
+This repository contains dataset generation code for ClevrTex benchmark from paper:
+**[ClevrTex: A Texture-Rich Benchmark for Unsupervised Multi-Object Segmentation](https://www.robots.ox.ac.uk/~vgg/research/clevrtex)**
 
 ## Requirements
 
@@ -41,7 +41,7 @@ blender --background --python-use-system-env --python generate.py -- <args>
 #### Textures
 The final piece is to set up source assets for rendering, namely the materials. 
 Briefly, the textures used to create the materials are copyrighted by Poliigon Pty Ltd.
-Textures used in the CLEVRTEX dataset are freely availble (at the time of writing) and should be
+Textures used in the ClevrTex dataset are freely availble (at the time of writing) and should be
 downloaded from www.poliigon.com  (download metalness workflow for matalics). Please check MATERIALS.md for full list.
 
 Download appropriate textures and place them into `data/materials/textures` and `data/outd_materials/textures`. 
@@ -77,7 +77,7 @@ cd clevrtex-gen
 Otherwise, please see arguments available to customise the rendering. Dataset variants can be recreated using appropriate 
 `<variant>.json` files.
 
-# Using CLEVRTEX
+# Using ClevrTex
 See project page for download links for CLEVRTEX.
 `clevrtex_eval.py` file contains dataloading logic to for convenient access to CLEVRTEX data.
 Consider
@@ -100,7 +100,7 @@ dataloader = torch.utils.data.DataLoader(clevrtex, batch_size=BATCH, shuffle=Tru
 See `CLEVRTEX_Evaluator` in `clevrtex_eval.py`. It implements all the utilities needed.
 
 ### CLEVR
-This dataset builds upon 
+This dataset builds upon
 **[CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning](http://cs.stanford.edu/people/jcjohns/clevr/)**
  <br>
  <a href='http://cs.stanford.edu/people/jcjohns/'>Justin Johnson</a>,
@@ -116,7 +116,7 @@ In particular we use a method for computing cardinal directions from CLEVR.
 See the original licence included in the clevr_qa.py file.
 
 # BibTeX
-If you use CLEVRTEX dataset or generation code consider citing:
+If you use ClevrTex dataset or generation code consider citing:
 ```
 BiBTeX coming soon...
 ```
