@@ -1,0 +1,40 @@
+{
+  "shapes": {
+    "cone": {
+      "name": "Cone",
+      "material": {"exclude":  ["tabularasa", "rubber", "mymetal"]}
+    },
+    "icosahedron": {
+      "name": "Icosahedron",
+      "material": {"exclude":  ["tabularasa", "rubber", "mymetal"]}
+    },
+    "torus": {
+      "name": "Torus",
+      "material": {"exclude":  ["tabularasa", "rubber", "mymetal"]}
+    },
+    "teapot": {
+      "name": "NewellTeapot",
+      "material": {"exclude":  ["tabularasa", "rubber", "mymetal"]}
+    }
+  },
+  "colors": {
+    "gray": [87, 87, 87],
+    "red": [173, 35, 35],
+    "blue": [42, 75, 215],
+    "green": [29, 105, 20],
+    "brown": [129, 74, 25],
+    "purple": [129, 38, 192],
+    "cyan": [41, 208, 208],
+    "yellow": [255, 238, 51]
+  },
+  "sizes": {
+    "large": 1.0,
+    "medium": 0.8,
+    "small": 0.6
+  },
+  "ground" : {
+    "material": {
+      "exclude":  ["tabularasa", "rubber", "mymetal"]
+    }
+  }
+}
