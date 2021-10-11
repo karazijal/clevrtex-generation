@@ -190,6 +190,10 @@ def render_scene(args,
         print(f'Set {obj.name} to {meta["material"]} from {mat_path}')
     metadata['objects'] = objects
 
+    if args.missing_filepath_prefix is not None:
+        missing_path_directory = str(args.missing_filepath_prefix)
+        bpy.ops.file.find_missing_files(directory=missing_path_directory)
+
     # Render the scene
     try:
         bpy.ops.render.render(write_still=True)
@@ -241,6 +245,7 @@ def render_scene(args,
         json.dump(metadata, f, indent=2)
 
     if args.blendfiles:
+        bpy.ops.file.make_paths_absolute()
         bpy.ops.wm.save_as_mainfile(filepath=str(Path(str(output_prefix_path) + '.blend')))
 
 
@@ -361,7 +366,7 @@ def test_scene(args,
                            args.render_num_samples,
                            args.render_min_bounces,
                            args.render_max_bounces,
-                           use_gpu=bool(args.use_gpu))
+                           use_gpu=bool(args.gpu))
     # This will give ground-truth information about the scene and its objects
     metadata = {
         'num_objects': -1,
@@ -465,6 +470,12 @@ def test(args):
                                    Random=0.5,
                                    Displacement=0.35,
                                    Scale=2.)
+
+                bpy.ops.file.report_missing_files()
+                if args.missing_filepath_prefix is not None:
+                    missing_path_directory = str(args.missing_filepath_prefix)
+                    bpy.ops.file.find_missing_files(directory=missing_path_directory)
+
                 metadata['ground_material'] = name
                 for meta, obj in zip(metadata['objects'], blender_objects):
                     meta['color'], rgba = sampling_conf._color
@@ -500,7 +511,7 @@ def test(args):
                 metadata['mask_filename'] = str(mask_out_path.name)
 
                 cced_img_path = None
-                if not args.no_cc:
+                if args.cc:
                     cced_img_path = Path(str(output_prefix_path) + '_cc.jpg')
                     img = img_utils.colorcorrect(output_image, cced_img_path)
                 else:
@@ -514,6 +525,7 @@ def test(args):
                     json.dump(metadata, f, indent=2)
 
                 if args.blendfiles:
+                    bpy.ops.file.make_paths_absolute()
                     bpy.ops.wm.save_as_mainfile(filepath=str(Path(str(output_prefix_path) + '.blend')))
             break
         except TriesExceededError:
@@ -627,6 +639,9 @@ if __name__ == '__main__':
 
     parser.add_argument('--npz', default=False, action='store_true',
                         help="Place RGB images and masks into convenient npz archive for loading")
+
+    parser.add_argument('--missing_filepath_prefix', default=None,
+                        help="Path for remapping resource (texture) locations")
 
     argv = sys.argv
     if '--' in argv:

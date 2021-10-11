@@ -1,4 +1,4 @@
-The following is a list of textures used from Poliigon used in CLEVRTEX:
+The following is a list of textures used from Poliigon used in CLEVRTEX (3K versions):
 
 - Bricks01
 - BricksFlemishRed001
@@ -63,9 +63,9 @@ The following is a list of textures used from Poliigon used in CLEVRTEX:
 In addition, we use the WhiteMarble precedural material.
 Matrials Rubber.blend, MyMetal.blend and TabulaRasa.blend have been created to reflect materials used in CLEVR.
 
-The following are list of Poliigon materials used in OUTD dataset.
+The following are list of Poliigon materials used in OUTD dataset (get 3K versions).
 
- - BrickOldRed001
+ - BrickOldRed001 (Get 2K version)
  - CarpetPlushDesignerRhombus001
  - ChainmailGoldRounded001
  - ChippedPaint015

@@ -46,6 +46,7 @@ downloaded from www.poliigon.com  (download metalness workflow for matalics). Pl
 
 Download appropriate textures and place them into `data/materials/textures` and `data/outd_materials/textures`. 
 We include .blend files for materials which have been stripped of the original textures (due to licensing restrictions) but contain the settings adjustments made.
+Skip the following instructions if working with existing .blend files.
 
 ##### To recreate/add new materials:
 The following process needs to be applied for all materials. Consider using [addon](https://help.poliigon.com/en/articles/2540839-poliigon-material-converter-addon-for-blender) provided by Poliigon.
@@ -65,7 +66,12 @@ We rely on the trick identified by Johnson et al. in the original
 6. Ensure the node group is named identically to the material and then save it as your-node-group-name.blend.
 
 This is unfortunatelly a manual process to ensure all textures look good that usually involves several test render per texture.
-*To scan for errors and see how the end result might look like, consider using --test-scan option in the generation script.*
+
+#### Debugging textures
+When ensuring that textures are sourced appropriatelly and look good, consider trying with a single texture first (to save time).
+To scan for errors and see how the end result might look like, consider using `--test_scan` option in the generation script.*
+In addition, consider `--blendfiles` option to save blender scene after rendering for manual inspection. 
+
 
 ## Generating
 To generate the dataset run the following (will produce a LOCAL_debug_000001.png example):
