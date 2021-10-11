@@ -49,7 +49,7 @@ We include .blend files for materials which have been stripped of the original t
 Skip the following instructions if working with existing .blend files.
 
 ##### To add new materials:
-The following process needs to be applied for all materials. Consider using [addon](https://help.poliigon.com/en/articles/2540839-poliigon-material-converter-addon-for-blender) provided by Poliigon.
+The following process needs to be applied for each new material. Consider using [addon](https://help.poliigon.com/en/articles/2540839-poliigon-material-converter-addon-for-blender) provided by Poliigon.
 1. Import materials textures as per addon's instructions.
 2. Open the material in question in node editor in Blender.
 3. Create a new node group of all nodes except the output node (yes this will nest the groups, it is intentional).
@@ -68,7 +68,7 @@ We rely on the trick identified by Johnson et al. in the original
 This is unfortunatelly a manual process to ensure all textures look good that usually involves several test render per texture.
 
 #### Debugging textures
-When ensuring that textures are sourced appropriatelly and look good, consider trying with a single texture first (to save time).
+To ensure the textures are found and look good, consider trying with a single texture first (to save time).
 To scan for errors and see how the end result might look like, consider using `--test_scan` option in the generation script.*
 In addition, consider `--blendfiles` option to save blender scene after rendering for manual inspection. 
 
