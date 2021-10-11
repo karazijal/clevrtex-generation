@@ -48,7 +48,7 @@ Download appropriate textures and place them into `data/materials/textures` and 
 We include .blend files for materials which have been stripped of the original textures (due to licensing restrictions) but contain the settings adjustments made.
 Skip the following instructions if working with existing .blend files.
 
-##### To recreate/add new materials:
+##### To add new materials:
 The following process needs to be applied for all materials. Consider using [addon](https://help.poliigon.com/en/articles/2540839-poliigon-material-converter-addon-for-blender) provided by Poliigon.
 1. Import materials textures as per addon's instructions.
 2. Open the material in question in node editor in Blender.
