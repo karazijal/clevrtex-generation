@@ -44,7 +44,7 @@ Briefly, the textures used to create the materials are copyrighted by Poliigon P
 Textures used in the ClevrTex dataset are freely availble (at the time of writing) and should be
 downloaded from www.poliigon.com  (download metalness workflow for matalics). Please check MATERIALS.md for full list.
 
-Download appropriate textures and place them into `data/materials/textures` and `data/outd_materials/textures`. 
+Download appropriate textures and place them into `data/materials/textures` and `data/outd_materials/textures`. Note, the textures should be in the directory not in subfolders. 
 We include .blend files for materials which have been stripped of the original textures (due to licensing restrictions) but contain the settings adjustments made.
 Skip the following instructions if working with existing .blend files.
 
@@ -77,7 +77,7 @@ In addition, consider `--blendfiles` option to save blender scene after renderin
 To generate the dataset run the following (will produce a LOCAL_debug_000001.png example):
 ```bash
 cd clevrtex-gen
-./local_test.bash
+ ./local_test.bash
 ```
 
 Otherwise, please see arguments available to customise the rendering. Dataset variants can be recreated using appropriate 
