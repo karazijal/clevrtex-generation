@@ -10,6 +10,6 @@ export PYTHONHOME=~/miniconda3/envs/p37
 		 --output_dir ../output/ \
 		 --properties_json data/full.json \
 		 --shape_dir data/shapes \
-		 --material_dir data/materials \
+		 --material_dir data/unused_materials \
 		 --blendfiles \
 		 --num_images 1

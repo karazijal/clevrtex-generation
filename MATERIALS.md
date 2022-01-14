@@ -14,7 +14,7 @@ The following is a list of textures used from Poliigon used in CLEVRTEX (3K vers
 - FabricFleece001
 - FabricLeatherBuffaloRustic001
 - FabricRope001
-- FabricUpholsteryBrightAnglePattern001
+- FabricUpholsteryMidCenturyPebbles001 ***(Check errata)***
 - GroundClay002
 - GroundDirtForest014
 - GroundDirtRocky002
@@ -90,3 +90,6 @@ The following are list of Poliigon materials used in OUTD dataset (get 3K versio
  - PoliigonRustPlain030
  - SteelFloorDiamond001
  - TilesTerrazzoPalladianaHonedGreen001
+
+The following are list of materials that are available in this repository but are as yet unsued in the published datasets:
+- FabricUpholsteryBrightAnglePattern001
