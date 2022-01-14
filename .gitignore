@@ -135,4 +135,7 @@ dmypy.json
 
 clevrtex-gen/data/materials/textures
 clevrtex-gen/data/outd_materials/textures
+clevrtex-gen/data/unused_materials/textures
 output
+
+**/*.blend1
