@@ -1,7 +1,8 @@
 # ClevrTex
 
 This repository contains dataset generation code for ClevrTex benchmark from paper:
-**[ClevrTex: A Texture-Rich Benchmark for Unsupervised Multi-Object Segmentation](https://www.robots.ox.ac.uk/~vgg/research/clevrtex)**
+**[ClevrTex: A Texture-Rich Benchmark for Unsupervised Multi-Object Segmentation](https://www.robots.ox.ac.uk/~vgg/research/clevrtex)**.
+For dataset generation code, see [here](https://github.com/karazijal/clevrtex).
 
 #### Consider checking [Errata](ERRATA.md) if reproducing.
 #### Consider including [additional materials](clevrtex-gen/data/unused_materials) when updating.
