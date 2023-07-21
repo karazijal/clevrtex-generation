@@ -1,4 +1,4 @@
-The following is a list of textures used from Poliigon used in CLEVRTEX (3K versions):
+The following is a list of textures used from Poliigon used in CLEVRTEX (3K versions) (original version):
 
 - Bricks01
 - BricksFlemishRed001
