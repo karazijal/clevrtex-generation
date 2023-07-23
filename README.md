@@ -8,7 +8,7 @@ For experiment code, see [here](https://github.com/karazijal/clevrtex).
 
 Due to some changes of the T&Cs of the vendor we have previously obtained the materials from, it might no longer be possible to obtain and use the original materials in AI-related applications. We have thus compiled a new library of materials using textures from [Polyhaven](https://polyhaven.com/license), [ambientCG](https://ambientcg.com), and [Sharetextures.com](https://www.sharetextures.com/p/license), available under CC0 licenses. 
 
-The new material library is available [here](https://thor.robots.ox.ac.uk/datasets/clevrtex/clevrtexv2_materials.tar.gz) for the main ClevrTex dataset, and [here](https://thor.robots.ox.ac.uk/datasets/clevrtex/clevrtexv2_outd_materials.tar.gz) for the OOD. Simply place the materails in the `data/materials` and `data/outd_materials` folders, respectively, and follow the instructions below to generate the dataset.
+The new material library is available [here](https://thor.robots.ox.ac.uk/datasets/clevrtex/clevrtexv2_materials.tar.gz) for the main ClevrTex dataset, and [here](https://thor.robots.ox.ac.uk/datasets/clevrtex/clevrtexv2_outd_materials.tar.gz) for the OOD. Simply replace the materials in the `data/materials` and `data/outd_materials` folders (or point the scripts to a different folders), respectively, and follow the instructions below to generate the dataset.
 
 
 ## Requirements
